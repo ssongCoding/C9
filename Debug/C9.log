@@ -1,2 +1,20 @@
-﻿  test.c
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1016,5): warning MSB8027: 이름이 Test.c인 둘 이상의 파일이 같은 위치에 출력을 생성합니다. 이로 인해 잘못된 빌드 결과가 나타날 수 있습니다.  관련된 파일은 ..\..\..\Downloads\repos\Day04\Day04\Test.c, test.c입니다.
+  change.c
+  day02.c
+  holsujjacsu.c
+  manyack.c
+  scan.c
+  Ex01.c
+  Ex02.c
+  Test.c
+  swichEx1.c
+  switchTest.c
+  Day06_EX01.c
+  Day06_EX02.c
+  Day06_EX03.c
+  Day06_EX04.c
+  Day06_EX05.c
+  test.c
+  코드를 생성하고 있습니다...
+Debug\test.obj : warning LNK4042: 개체가 두 번 이상 지정되었습니다. 나머지는 무시됩니다.
   C9.vcxproj -> C:\Users\SUNGLAE\source\repos\C9\Debug\C9.exe

@@ -139,6 +139,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\Downloads\repos\Day02\Day02\change.c" />
+    <ClCompile Include="..\..\..\Downloads\repos\Day02\Day02\day02.c" />
+    <ClCompile Include="..\..\..\Downloads\repos\Day03\Day03\holsujjacsu.c" />
+    <ClCompile Include="..\..\..\Downloads\repos\Day03\Day03\manyack.c" />
+    <ClCompile Include="..\..\..\Downloads\repos\Day03\Day03\scan.c" />
+    <ClCompile Include="..\..\..\Downloads\repos\Day04\Day04\Ex01.c" />
+    <ClCompile Include="..\..\..\Downloads\repos\Day04\Day04\Ex02.c" />
+    <ClCompile Include="..\..\..\Downloads\repos\Day04\Day04\Test.c" />
+    <ClCompile Include="..\..\..\Downloads\repos\Day05\Day05\swichEx1.c" />
+    <ClCompile Include="..\..\..\Downloads\repos\Day05\Day05\switchTest.c" />
+    <ClCompile Include="..\..\..\Downloads\repos\Day06\Day06\Day06_EX01.c" />
+    <ClCompile Include="..\..\..\Downloads\repos\Day06\Day06\Day06_EX02.c" />
+    <ClCompile Include="..\..\..\Downloads\repos\Day06\Day06\Day06_EX03.c" />
+    <ClCompile Include="..\..\..\Downloads\repos\Day06\Day06\Day06_EX04.c" />
+    <ClCompile Include="..\..\..\Downloads\repos\Day06\Day06\Day06_EX05.c" />
     <ClCompile Include="test.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

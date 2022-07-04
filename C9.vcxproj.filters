@@ -13,10 +13,70 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\Day02">
+      <UniqueIdentifier>{6615efc4-47a7-4b8f-aa7e-59587f7d7395}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Day03">
+      <UniqueIdentifier>{9e573ed0-84fe-4d29-9900-89b12b6992c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Day04">
+      <UniqueIdentifier>{f669fc86-5f43-4e68-9f08-dba546830423}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Day05">
+      <UniqueIdentifier>{cd895cd6-6368-4250-ad05-08efff661408}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Day06">
+      <UniqueIdentifier>{fe9d5bd7-72fc-49b9-8df7-d1517e346ae1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="test.c">
       <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Downloads\repos\Day02\Day02\change.c">
+      <Filter>소스 파일\Day02</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Downloads\repos\Day02\Day02\day02.c">
+      <Filter>소스 파일\Day02</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Downloads\repos\Day03\Day03\manyack.c">
+      <Filter>소스 파일\Day03</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Downloads\repos\Day03\Day03\scan.c">
+      <Filter>소스 파일\Day03</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Downloads\repos\Day03\Day03\holsujjacsu.c">
+      <Filter>소스 파일\Day03</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Downloads\repos\Day04\Day04\Ex02.c">
+      <Filter>소스 파일\Day04</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Downloads\repos\Day04\Day04\Test.c">
+      <Filter>소스 파일\Day04</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Downloads\repos\Day04\Day04\Ex01.c">
+      <Filter>소스 파일\Day04</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Downloads\repos\Day05\Day05\swichEx1.c">
+      <Filter>소스 파일\Day05</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Downloads\repos\Day05\Day05\switchTest.c">
+      <Filter>소스 파일\Day05</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Downloads\repos\Day06\Day06\Day06_EX02.c">
+      <Filter>소스 파일\Day06</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Downloads\repos\Day06\Day06\Day06_EX03.c">
+      <Filter>소스 파일\Day06</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Downloads\repos\Day06\Day06\Day06_EX04.c">
+      <Filter>소스 파일\Day06</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Downloads\repos\Day06\Day06\Day06_EX05.c">
+      <Filter>소스 파일\Day06</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Downloads\repos\Day06\Day06\Day06_EX01.c">
+      <Filter>소스 파일\Day06</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
