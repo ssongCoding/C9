@@ -139,28 +139,35 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\Downloads\repos\Day02\Day02\Day02_Ex2_change.c" />
-    <ClCompile Include="..\..\..\Downloads\repos\Day02\Day02\Day02_EX1.c" />
-    <ClCompile Include="..\..\..\Downloads\repos\Day03\Day03\Day03_Ex3_holsujjacsu.c" />
-    <ClCompile Include="..\..\..\Downloads\repos\Day03\Day03\Day03_Ex2_manyack.c" />
-    <ClCompile Include="..\..\..\Downloads\repos\Day03\Day03\Day03_Ex1_scan.c" />
-    <ClCompile Include="..\..\..\Downloads\repos\Day04\Day04\Day04_Ex1.c" />
-    <ClCompile Include="..\..\..\Downloads\repos\Day04\Day04\Day04_Ex2.c" />
-    <ClCompile Include="..\..\..\Downloads\repos\Day04\Day04\Day04_Ex3.c" />
-    <ClCompile Include="..\..\..\Downloads\repos\Day05\Day05\Day05_Ex1_swich.c" />
-    <ClCompile Include="..\..\..\Downloads\repos\Day05\Day05\Day05_Ex2_switchTest.c" />
-    <ClCompile Include="..\..\..\Downloads\repos\Day06\Day06\Day06_Ex1.c" />
-    <ClCompile Include="..\..\..\Downloads\repos\Day06\Day06\Day06_Ex2.c" />
-    <ClCompile Include="..\..\..\Downloads\repos\Day06\Day06\Day06_Ex3.c" />
-    <ClCompile Include="..\..\..\Downloads\repos\Day06\Day06\Day06_Ex4.c" />
-    <ClCompile Include="..\..\..\Downloads\repos\Day06\Day06\Day06_Ex5.c" />
-    <ClCompile Include="test.c" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="C9.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Day02\Day02_EX1.c" />
+    <ClCompile Include="Day02\Day02_Ex2_change.c" />
+    <ClCompile Include="Day03\Day03_Ex1_scan.c" />
+    <ClCompile Include="Day03\Day03_Ex2_manyack.c" />
+    <ClCompile Include="Day03\Day03_Ex3_holsujjacsu.c" />
+    <ClCompile Include="Day04\Day04_Ex1.c" />
+    <ClCompile Include="Day04\Day04_Ex2.c" />
+    <ClCompile Include="Day04\Day04_Ex3.c" />
+    <ClCompile Include="Day05\Day05_Ex1_swich.c" />
+    <ClCompile Include="Day05\Day05_Ex2_switchTest.c" />
+    <ClCompile Include="Day06\Day06_Ex1.c" />
+    <ClCompile Include="Day06\Day06_Ex2.c" />
+    <ClCompile Include="Day06\Day06_Ex3.c" />
+    <ClCompile Include="Day06\Day06_Ex4.c" />
+    <ClCompile Include="Day06\Day06_Ex5.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C9.APS" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Debug\C9.Build.CppClean.log" />
+    <Text Include="Debug\C9.log" />
+    <Text Include="Debug\C9.vcxproj.FileListAbsolute.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
