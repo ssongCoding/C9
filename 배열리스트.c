@@ -100,4 +100,5 @@ int main() {
 	display(&arrList); // 3개 잘 들어있는지 확인 출력!
 	printf("******************\n");
 	return 0;
+	
 }
