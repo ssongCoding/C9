@@ -63,8 +63,10 @@ void add(ArrayList* L, int position, int item) {
 void delete(ArrayList* L, int position) {
 	// 비었는지 안비었는지 && position이 배열 안에 들어오는지
 	if (isEmpty(L) == 0 && position >= 0 && position <= L->size - 1) {
-		for (int i = position; i <= L->size; i++) {
+		for (int i = position; i < L->size; i++) {
 			L->list[i] = L->list[i + 1]; // 하나씩 앞으로 땡겼어요
+			// 5개, 0~4
+			// list[5] = list[6]
 		}
 		L->size--; // 원소 개수 -1
 	}	
@@ -100,5 +102,4 @@ int main() {
 	display(&arrList); // 3개 잘 들어있는지 확인 출력!
 	printf("******************\n");
 	return 0;
-	
 }
