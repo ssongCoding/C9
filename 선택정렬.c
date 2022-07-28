@@ -1,32 +1,41 @@
-#include <stdio.h>
-
-int main() {
-	int arr[] = { 9, 6, 7, 3, 5 }; // ÃÊ±â »óÅÂ
-	int arr_size = sizeof(arr)/sizeof(int); // 5
-	
-	int min; // ¼±ÅÃ°ª(ÃÖ¼Ò°ªÀÌ¶ó °¡Á¤)À» ÀúÀåÇÒ º¯¼ö
-	int minIndex;
-
-	for (int i = 0; i < arr_size-1; i++) { // 0 1 2 3
-		min = arr[i]; // ÃÖ¼Ò°ªÀÌ¶ó °¡Á¤
-		minIndex = i; // ¼±ÅÃ°ª ÀÚ¸®
-
-		for (int j = i + 1; j < arr_size; j++) {
-			if (arr[j] < min) {
-				min = arr[j];
-				minIndex = j; // ÃÖ¼Ò°ª ÀÚ¸®
-			}
-		} // ÃÖ¼Ò°ª Ã£À½! 
-
-		// ¼±ÅÃ°ª ÀÚ¸® <-- ÃÖ¼Ò°ª ÀÌµ¿
-		arr[i] = arr[minIndex];
-		// ÃÖ¼Ò°ª ÀÚ¸® <-- ¼±ÅÃ°ª
-		arr[minIndex] = arr[i];
-	}
-
-	for (int k = 0; k < arr_size; k++) {
-		printf("%d\n", arr[k]);
-	}
-	
-	return 0;
-}
+//#include <stdio.h>
+//
+//int main() {
+//	int arr[] = { 9, 6, 7, 3, 5 }; // ì´ˆê¸° ìƒíƒœ
+//	int arr_size = sizeof(arr)/sizeof(int); // 5
+//	
+//	int min; // ì„ íƒê°’(ìµœì†Œê°’ì´ë¼ ê°€ì •)ì„ ì €ì¥í•  ë³€ìˆ˜
+//	int minIndex;
+//
+//	for (int i = 0; i < arr_size-1; i++) { // 0 1 2 3
+//		min = arr[i]; // ìµœì†Œê°’ì´ë¼ ê°€ì •
+//		minIndex = i; // ì„ íƒê°’ ìë¦¬
+//
+//		for (int j = i + 1; j < arr_size; j++) {
+//			if (arr[j] < min) {
+//				min = arr[j];
+//				minIndex = j; // ìµœì†Œê°’ ìë¦¬
+//			}
+//		} // ìµœì†Œê°’ ì°¾ìŒ! 
+//
+//		/*
+//		arr[i] = 7 / arr[j] = 10; / min = 10
+//			arr[i] = min;  // arr[i] = 10 -> 7ê°’ì´ ì‚¬ë¼ì ¸ìš”
+//			arr[j] = arr[i]
+//
+//		ê·¸ë˜ì„œ, arr[j] = arr[i] // arr[j] = 7
+//			    arr[i] = min;
+//		*/
+//
+//		// ì„ íƒê°’ ìë¦¬ <-- ìµœì†Œê°’ ì´ë™
+//		arr[i] = min; // 
+//		// ìµœì†Œê°’ ìë¦¬ <-- ì„ íƒê°’
+//		arr[minIndex] = arr[i];
+//	}
+//
+//	for (int k = 0; k < arr_size; k++) {
+//		printf("%d\n", arr[k]);
+//	}
+//	
+//	return 0;
+//}
