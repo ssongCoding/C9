@@ -1,62 +1,62 @@
 #include <stdio.h>
 
 /*
-	½ºÅÃ ÇÔ¼ö
-	1) init(Stack*) : ÃÊ±âÈ­
-	2) push : itemÀ» ½ºÅÃ¿¡ »ğÀÔ
-	3) pop : itemÀ» ½ºÅÃ¿¡¼­ Á¦°Å
-	4) peek : itemÀÇ °ªÀ» °¡Á®¿À´Â °Å
-	5) isFull(Stack*) : ½ºÅÃÀÌ ²Ë Ã¡´ÂÁö
-	6) isEmpty(Stack*) : ½ºÅÃÀÌ ÅÖ ºñ¾îÀÖ´ÂÁö
-	7) display : ½ºÅÃ itemµé ´Ù Ãâ·Â
+	ìŠ¤íƒ í•¨ìˆ˜
+	1) init(Stack*) : ì´ˆê¸°í™”
+	2) push : itemì„ ìŠ¤íƒì— ì‚½ì…
+	3) pop : itemì„ ìŠ¤íƒì—ì„œ ì œê±°
+	4) peek : itemì˜ ê°’ì„ ê°€ì ¸ì˜¤ëŠ” ê±°
+	5) isFull(Stack*) : ìŠ¤íƒì´ ê½‰ ì°¼ëŠ”ì§€
+	6) isEmpty(Stack*) : ìŠ¤íƒì´ í…… ë¹„ì–´ìˆëŠ”ì§€
+	7) display : ìŠ¤íƒ itemë“¤ ë‹¤ ì¶œë ¥
 */
 
 typedef struct {
-	int stack[5]; // ½ºÅÃ ¿ªÇÒÀ» ÇØÁÙ ¹è¿­
-	int size; // ½ºÅÃ ¿ø¼Ò °³¼ö; size -1 = Á¦ÀÏ À§¿¡ ÀÖ´Â °ª
+	int stack[5]; // ìŠ¤íƒ ì—­í• ì„ í•´ì¤„ ë°°ì—´
+	int size; // ìŠ¤íƒ ì›ì†Œ ê°œìˆ˜; size -1 = ì œì¼ ìœ„ì— ìˆëŠ” ê°’
 } Stack;
 
-// 1) ÃÊ±âÈ­
+// 1) ì´ˆê¸°í™”
 void init(Stack* S) {
 	S->size = 0;
 }
 
-// 2) push : itemÀ» ½ºÅÃ¿¡ »ğÀÔ
+// 2) push : itemì„ ìŠ¤íƒì— ì‚½ì…
 void push(Stack* S, int item) {
-	// ²Ë Â÷ÀÖÁö ¾ÊÀ¸¸é, °ªÀ» Ãß°¡ ÇØÁÜ
+	// ê½‰ ì°¨ìˆì§€ ì•Šìœ¼ë©´, ê°’ì„ ì¶”ê°€ í•´ì¤Œ
 	if (isFull(S) == 0) {
 		S->stack[S->size] = item;
-		//******¿©·¯ºĞ ³ª ¿©±â »çÀÌÁî ¾È ´Ã¿©Áá´Âµ¥..?
-		//******´Ùµé µÇ´Â Ã´ ÇÏ°í °£°Å¿¡¿ä...?
+		S->size++; // í•œì¹¸ ëŠ˜ì´ê¸° 2022.08.01
 	} else {
-		printf("½ºÅÃÀÌ ²Ë Â÷¼­, °ªÀ» ³ÖÀ» °ø°£ÀÌ ºÎÁ·ÇÕ´Ï´Ù.");
+		printf("ìŠ¤íƒì´ ê½‰ ì°¨ì„œ, ê°’ì„ ë„£ì„ ê³µê°„ì´ ë¶€ì¡±í•©ë‹ˆë‹¤.");
 	}
 }
 
-// 3) pop : itemÀ» ½ºÅÃ¿¡¼­ Á¦°Å
+// 3) pop : itemì„ ìŠ¤íƒì—ì„œ ì œê±°
 void pop(Stack* S) {
-	// ºñ¾îÀÖÁö ¾ÊÀ¸¸é, 
+	// ë¹„ì–´ìˆì§€ ì•Šìœ¼ë©´, 
 	if (isEmpty(S) == 0) { // isEmpty(S) != 1
 						   // !isEmpty(S)
 		S->size--;
 	} else {
-		printf("½ºÅÃÀÌ ºñ¾îÀÖ¾î¼­, Á¦°ÅÇÒ itemÀÌ ¾ø½À´Ï´Ù.");
+		printf("ìŠ¤íƒì´ ë¹„ì–´ìˆì–´ì„œ, ì œê±°í•  itemì´ ì—†ìŠµë‹ˆë‹¤.");
 	}
 }
 
-// 4) peek : itemÀÇ °ªÀ» °¡Á®¿À´Â °Å
+// 4) peek : itemì˜ ê°’ì„ ê°€ì ¸ì˜¤ëŠ” ê±°
 int peek(Stack* S) {
 	if (isEmpty(S) == 1) {
 		// isEmpty(S) != 1 >> !isEmpty(S)
 		// isEmpty(S) == 1 >> isEmpty(S)
-		printf("½ºÅÃÀÌ ºñ¾îÀÖ½À´Ï´Ù.\n");
-		// TODO :: ³ªÁß¿¡ ´Ù½Ã ±¸Çö
+		printf("ìŠ¤íƒì´ ë¹„ì–´ìˆìŠµë‹ˆë‹¤.\n");
+
+		// TODO :: ë‚˜ì¤‘ì— ë‹¤ì‹œ êµ¬í˜„
 	} else {
 		return S->stack[S->size - 1];
 	}	
 }
 
-// 5) isFull(Stack) : ²Ë Ã¡´ÂÁö È®ÀÎ
+// 5) isFull(Stack) : ê½‰ ì°¼ëŠ”ì§€ í™•ì¸
 int isFull(Stack* S) {
 	if (S->size == 5) {
 		return 1;
@@ -77,17 +77,21 @@ int isEmpty(Stack* S) {
 
 // 7) display
 void display(Stack* S) {
-	if (isEmpty(S) != 1) { // ºñ¾îÀÖÁö ¾ÊÀ¸¸é
+	if (isEmpty(S) != 1) { // ë¹„ì–´ìˆì§€ ì•Šìœ¼ë©´
 						   // == !isEmpty(S)
 		for (int i = 0; i < S->size; i++) {
 			printf("stack[%d] \ %d\n", i, S->stack[i]);
 		}
 	} else {
-		printf("½ºÅÃÀÌ ºñ¾îÀÖ¾î¼­, Ãâ·ÂÇÒ itemÀÌ ¾ø½À´Ï´Ù.\n");
+		printf("ìŠ¤íƒì´ ë¹„ì–´ìˆì–´ì„œ, ì¶œë ¥í•  itemì´ ì—†ìŠµë‹ˆë‹¤.\n");
 	}
 }
 
 int main() {
 
+	/*
+		í…ŒìŠ¤íŠ¸ êµ‰ì¥íˆ ì¤‘ìš”
+		ì‹¤ë¬´
+	*/
 	return 0;
 }
