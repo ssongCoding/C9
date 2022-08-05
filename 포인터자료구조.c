@@ -1,28 +1,36 @@
 #include <stdio.h>
-#include <stdlib.h> // 라이브러리!
+#include <stdlib.h> // malloc
 
-typedef struct {
-	int num;
-	Box* nextBox;
-}Box;
+//typedef struct BOX BOX;
+
+struct BOX { // 구조체
+	int num; // 숫자 변수
+	struct BOX* nextBox; // 다음 Box의 주소
+};
 
 int main() {
-
-	Box box1;
+	/*
+	struct BOX box1;
 	box1.num = 10;
-	// box1이 뭘 들고 있어요? box2의 주소를 가리켜요
-	Box box2;
+
+	struct BOX box2;
 	box2.num = 20;
 
-//	Box box[] = { box1, box2 };
+	box1.nextBox = &box2;
+	printf("%d", box1.nextBox->num);
+	*/
 
-	int num1 = 10;
-	int* ptr1 = &num1;
-//	Box* nextPtr = &box2;
+	struct BOX box3;
+	box3.num = 30;
+	box3.nextBox = malloc(sizeof(struct BOX));
+	box3.nextBox->num = 40;
 
-	printf("%d\n", num1);
-	printf("%p\n", ptr1);
-	printf("%d\n", *ptr1);
+	/*** 동적할당 ***/
+	char* arr = malloc(7 * sizeof(char));
+	// 7칸 * int 상자
+
+	int* arr2 = malloc(sizeof(int));
+	// int 상자 1개
 
 	return 0;
 }
